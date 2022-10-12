@@ -67,6 +67,9 @@ if streamlit.button('Get Fruit Load List'):
 #streamlit.header('The fruit load list contains:')
 #streamlit.dataframe(my_data_rows)
 
+# don't run anything past here while we trobleshoot
+streamlit.stop()
+
 # New Section to accept 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','Kiwi')
 streamlit.write('Thanks for adding ', add_my_fruit)
